@@ -1,15 +1,16 @@
 import { Controller, Get, Post } from '@nestjs/common';
-import { GetCronJob } from './dto/get-cron-job.dto';
+import { CronJob } from './entitiy/cronJob.entity';
+import { CronJobService } from './cron-job.service';
+
 @Controller('cronjob')
 export class CronJobController {
   @Get()
-  getCronJobList(): GetCronJob[] {
+  getCronJobList(): CronJob[] {
     return [];
   }
 
   @Post()
-  updateCronJobList(): GetCronJob[] {
+  updateCronJob(): CronJob[] {
     return [];
   }
-
 }

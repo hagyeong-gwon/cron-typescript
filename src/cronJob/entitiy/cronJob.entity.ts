@@ -1,7 +1,7 @@
-export class GetCronJob  {
+export class CronJob {
   readonly id: number;
   url: string;
-  extention: string;
+  extension: string;
   name: string;
   description: string;
   create_dt: string;
